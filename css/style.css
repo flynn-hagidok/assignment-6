@@ -1,0 +1,14 @@
+.stroked-text {
+  font-size: 1.5rem;
+  /* color: white;  */
+  -webkit-text-stroke: 1px black; /* Stroke width and color */
+  font-weight: bold;
+}
+
+.img-back{
+    background-image: url("../assets/hero-leaf1.png"),
+                      url("../assets/hero-leaf2.png");
+    background-position: left center, right center;
+    background-size: 540px 380px, 540px 380px;
+    background-repeat: no-repeat, no-repeat;  
+}
