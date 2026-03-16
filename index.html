@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- style sheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -67,8 +70,8 @@
         <div class="flex px-16 mt-10">
             <div class="w-50">
                 <h3 class="text-[1.25rem] font-semibold leading-7">Categories</h3>
-                <ul class="leading-6 space-y-3 mt-5">
-                    <li class="bg-[#15803D] text-white px-2 py-1 rounded-md cursor-pointer">All Trees</li>
+                <ul class="leading-6 space-y-3 mt-5" id="levelCategories">
+                    <!-- <li class="bg-[#15803D] text-white px-2 py-1 rounded-md cursor-pointer">All Trees</li>
                     <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Fruit Trees</li>
                     <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Flowering Trees</li>
                     <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Shade Trees</li>
@@ -78,7 +81,7 @@
                     <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Ornamental Plants</li>
                     <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Bamboo</li>
                     <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Climbers</li>
-                    <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Aquatic Plants</li>
+                    <li class="bg-[#15803D] px-2 py-1 rounded-md cursor-pointer">Aquatic Plants</li> -->
                 </ul>
             </div>
             <div class="grid grid-cols-3 px-8 gap-6 w-10/12 h-12/12">
@@ -130,21 +133,25 @@
             <div class="w-60 p-3 bg-white">
                 <div class="">
                     <div>
-                        <h2>Your Card</h2>
+                        <h2 class="text-[1.15rem] font-bold">Your Card</h2>
                     </div>
                     <div class="flex justify-between items-center rounded-md p-2 bg-green-50 my-3">
                         <div>
-                            <p>Mango Tree</p>
-                            <p>500 <span>*1</span></p>
+                            <div>
+                                <p class="font-semibold">Mango Tree</p>
+                            </div>
+                            <div class="text-gray-500">
+                                <p class="flex items-center"><i class="fa-solid fa-bangladeshi-taka-sign"></i>500 <span class="flex items-center ml-2"><i class="fa-solid fa-x"></i>1 </span></p>
+                            </div>
                         </div>
                         <div>
-                            *
+                            <img width="15" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1"/>
                         </div>
                     </div>
 
                     <hr class="text-gray-300">
 
-                    <div class="flex justify-between items-center my-2">
+                    <div class="flex justify-between items-center my-2 font-semibold">
                         <div>
                             Total:
                         </div>
@@ -157,5 +164,8 @@
         </div>
     </section>
 </body>
+
+<!--Script-->
+<script src="js/script.js"></script>
 
 </html>
